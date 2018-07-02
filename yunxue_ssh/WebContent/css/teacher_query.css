@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	outline: none;
+}
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+.query_img{
+	width:1300px;
+	height: auto;
+}
+.clearboth:after {
+    display: block;
+    content: "clear";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+li a{
+	text-decoration: none;
+	color:rgba(86,83,83,1.00);
+}
+.teacher_list_style1 li img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 40px;
+}
+img {
+    border: none;
+}
+.teacher_list_style1 li p.title {
+    font-size: 18px;
+    line-height: 18px;
+}
+.teacher_list_style1 .title span {
+    font-size: 14px;
+    color: #000000;
+    margin-left:25px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+}
+.teacher_list_style1 li p.description {
+    line-height: 18px;
+    color: #999;
+    font-size: 12px;
+    margin-top: 8px;
+    height:70px;
+    overflow: hidden;
+}
+.teacher_list_style1 li p.description span{
+	font-size: 13px;
+    color: #000000;
+}
+.teacher-style-title {
+    margin-top: 15px;
+    line-height: 14px;
+}
+.page{
+    height: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.page a.first, .page a:hover{
+    background: #4d88d9;
+    border: #4d88d9 solid 1px;
+    color: #fff;
+}
+.page a{
+    display: inline-block;
+    width: 50px;
+    height: 34px;
+    border: #ddd solid 1px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 34px;
+    margin: 0 2px;
+    transition: all 0.2s ease 0s;
+    font-size: 12px;
+    background: #f6f6f6;
+    color: #333;
+}
+.page a.lesson-right-btn, .page a.lesson-left-btn {
+    width: 90px;
+}
+/*粘贴栏*/
+#courser_list .course_indxe{display: none;}
+			.lesson-select{margin-top: 5px;}
+			.lesson-select-left{width: 105px; float: left; padding-left: 14px; text-align: left; font-size: 14px; color: #333; 
+				line-height: 40px;}
+			.course-list-left a:hover{color: #333;}
+			.lesson-select-left span{color: #666;}
+			.lesson-select-right{width: 1080px; text-align: left; font-size: 14px; color: #333; line-height: 40px;}
+			.lesson-select-right span{width: 84px; display: inline-block;}
+			.lesson-select-right span a{color: #666;}
+			.lesson-select-right span a:hover{color: #f90;}
+			.lesson-select-right span a.active{color: #f90;}
+			.lesson-select-cut-line{width: 1170px; margin: 0 auto; height: 0;border-top:1px solid #f0f0f0; clear: both;}
+			.course-list{ margin-top: 20px;}
+			.lesson-list-title{padding: 6px 0 6px 15px; border: 1px solid #ededed; border-left: 0; border-right: 0;
+				       background: #f4f4f4;font-size: 14px;}
+			.lesson-list-title a{float: left; padding: 0 9px; height: 23px; border: 1px solid #CCC; line-height: 23px; 
+				margin-right: -1px; background: #fff; color: #333; font-size: 12px;}
+			.lesson-list-title a:hover{color:  #f90; border: 1px solid  #f90;}
+			.lesson-list-title a.current{border-color:  #f90; background:  #f90; color: #fff;}
+			.course-list-left{float: left; width: 900px;height: 850px; }
+			
+			.course-list-right{width: 280px; float: right; }
+			.xiaoxueyou{overflow: hidden;}
+		.lesson-box{border-bottom: 1px solid #eee; background: #fff;padding: 20px 0 0 0; }
+			
+		.lesson-box:hover{background:#FCFCFC;}
+		.lesson-box-left{width: 180px; padding-top: 3px; float: left; text-align: center; position: relative;}
+		.lesson-box-left p{font-size: 24px; margin-top: 10px; color: #333;}
+		.lesson-box-img{width: 80px;  margin: 0 auto; height: 80px; }
+		.lesson-box-img-mask{width: 80px; height: 80px; position: absolute; left: 50px; top: 3px;}
+		
+		.teacher-lv{position: absolute; right: 23px; bottom:17px; width: 35px; height: 35px;}
+		.teacher-lv img{width: 35px; height: 35px;}
+		.mask1{display:block;}
+		.mask3{display:none;}
+		.lesson-box:hover .lesson-box-img-mask .mask1{display:none;}
+		.lesson-box:hover .lesson-box-img-mask .mask3{display:block;}		
+		.lesson-box-center{width: 460px; float: left;}
+		.lesson-box-information{margin-top: 13px;}
+		.lesson-box-information p{float: left; width: 186px; font-size: 14px; line-height: 26px; height: 26px; overflow: hidden; 
+				color: #666;}
+		.lesson-box-information p span,.lesson-box-right p span{color: #999;}
+		.lesson-box-right{width: 250px; float: right; padding-top: 2px;}
+		.lesson-box-right p{line-height: 26px; font-size: 14px; color: #666;}
+		.course-list-btn{ font-size: 14px; line-height: 33px; height: 33px; text-align: center; color: #666; width: 158px; 
+				background: #fff; border-radius: 33px; border: 1px solid #666; margin: 54px 0 0 0;}
+		.course-list-btn:hover{color: #fff; background:  #f90; border: 1px solid  #f90;} 
+			
+			.teacher-star{padding: 8px 0; line-height: 14px; color: #666;}
+			.teacher-star span{color: #999; }
+			.lesson-box-right span.lesson-box-online-price{color: #e4393c; font-size: 24px; line-height: 24px;}
+			.lesson-box-id{color: #1ec800; border: 1px solid #1ec800; display: inline-block;  padding: 0 5px; line-height: 18px; height: 
+				18px; margin: 5px 0 0 10px; font-size: 12px;}		
+			.teacher_list_style1{padding: 0; border: 1px solid #ededed;}
+			.teacher_list_style1 li{margin:19px 10px 0px 13px; padding: 0;}
+.teacher_list_style1 li {
+    border-bottom: #eee dashed 1px;
+}
+			.teacher_list_style1 li p.title{height: 18px; overflow: hidden;}
+			.teacher_list_style1 li img{margin-left: 3px;}
+			.course-list-left .page a:hover{color: #fff;}
+			.mt10{margin-top: 10px;}
+			.w390{width: 390px;}
+
+			/*绛涢€夋潯浠舵敹璧蜂笌鏄剧ず*/
+			.course-list-tigg{ display:none}
+			.course-list-tigg-c{margin: -1px auto 0; width: 198px; height: 31px; text-align:center; line-height:31px; color:#999; 
+				border: 1px solid #f0f0f0; border-top: 1px solid #fff; font-size: 12px; cursor:pointer}
+			.course-list-tigg-c:hover{ color: #f90}
+			.lesson-box-center .renzheng {width: 100%; margin: 0;}
+			.lesson-box-center .renzheng li{ margin:0; float: left; padding-left: 37px; width: 70px; height: 30px; line-height: 30px; 
+				font-size: 12px; color: #999; background:url(../IMG/query/teacher_medal.png) no-repeat; text-align: left;}
+			.lesson-box-center .renzheng li.realname{background-position: left 0px;}
+			.lesson-box-center .renzheng li.certification{background-position: left -50px;}
+			.lesson-box-center .renzheng li.title{background-position: left -100px;}
+			.lesson-box-center .renzheng li.qualification{background-position: left -150px;}
+			
+			.search-title{margin-top: 12px; padding-left: 15px; height: 36px; line-height: 36px; background: #f4f4f4; border: 1px solid 
+				#eae9e9; border-left: 0; border-right: 0;}
+			.search-title a:hover{color:#f90;}
+			.search-title a{color: black; font-size: 14px;}
+			.crumbs-nav-item{float: left; margin-right: 8px;}
+			.crumbs-arrow {font-family: simsun;font-style: normal;}
+			.menu-drop { display: inline-block; height: 24px; cursor: pointer; }
+			.menu-drop:hover { text-decoration: none; }
+			.menu-drop .menu-drop-arrow { display: inline-block; width: 20px; height: 20px; vertical-align: top; background: 
+				url(../images/icon/menu-icon.png) no-repeat 4px 7px; -webkit-transition: background-position .15s ease-in-out; 
+				-moz-transition: background-position .15s ease-in-out; transition: background-position .15s ease-in-out; }
+			.crumbs-nav { height: 24px; line-height: 24px; }
+			.crumbs-nav-item .menu-drop{float: left; margin-right: 5px;}
+			.crumbs-nav-item .menu-drop a.big{color: #666; font-size: 18px; font-weight: bold;}
+			.menu-drop .trigger { display: inline-block; margin-top: 6px; height: 22px; padding: 0 4px 0 8px; background: #fff; border: 
+				1px solid #ddd; line-height: 22px; vertical-align: top; }
+			.menu-drop .trigger .curr { display: inline-block; vertical-align: top; }
+			.menu-drop-main { display: none; width: 350px; padding: 10px 0 10px 8px; position: absolute; left: 0; top: 23px; border: 1px 
+				solid #ddd; background-color: #fff; }
+			.menu-drop-list li { float: left;  width: 65px; height: 24px; overflow: hidden; line-height: 24px; margin-right: 5px; 
+				text-overflow: ellipsis; white-space: nowrap; }
+			.menu-drop:hover .trigger{border-color: #1ec800;}
+			.selector-set .ss-item { position: relative;  display: inline-block; height: 22px; line-height: 22px; border: 1px solid 
+				#ddd; font-size: 14px; vertical-align: top; margin: 6px 5px 5px 0; padding: 0 28px 0 7px; cursor: pointer; background: 
+					#fff;}
+			.selector-set .ss-item b { font-weight: 400; }
+			.selector-set .ss-item em { color: #666; font-style: normal;}
+			.selector-set .ss-item i { display: block; position: absolute; width: 25px; height: 22px; right: 0; top: 0; background: 
+				url(../images/icon/menu-icon.png) no-repeat 7px -122px; }
+			.selector-set .ss-item:hover i { background-position: 7px -139px; }
+			.selector-set .ss-item:hover { border-color: #1ec800; text-decoration: none; }
+			.menu-drop-main a:hover{color: #1ec800;}
+			.z-menu-drop-open{position:relative;z-index:5}
+			.z-menu-drop-open .trigger{border-bottom-color:#fff;position:relative;z-index:6}
+			.z-menu-drop-open .menu-drop-arrow{background-position:4px -27px}
+			.z-menu-drop-open .menu-drop-main{display:block}
+			.z-menu-drop-open:hover .trigger{border-bottom-color:#fff}
+			.z-menu-drop-open:hover .menu-drop-main{border-color:#1ec800}
+			.z-menu-drop-open:hover .menu-drop-arrow{background-position:4px -44px}
+			.title2{background: #f1f1f1; color: #666; font-size: 14px; line-height: 40px;}
+            .title2 {
+                border-bottom: #eee solid 1px;
+                padding-left: 20px;
+/*
+                line-height: 44px;
+                font-size: 18px;
+*/
+            }
+ul{
+	margin: 0;
+}
+			.lesson-right-btn{width: 90px;}
+			.recommended-teacher h4{border-top:1px solid #ededed; line-height: 36px; height: 36px;}
+			.course-list-left .page{padding: 43px 0;}

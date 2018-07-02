@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入约束 -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="cn.yunxue.model.TeaIdentityMo" table="teaidentify" dynamic-update="true">
+		<id name="teaIdentityNo" column="teaIdentityNo">
+			<generator class="native"/>
+		</id>
+		
+		<property name="teacherNo"/>
+		<property name="teaName"/>
+		<property name="teaAge"/>
+		<property name="teaArea"/>
+		<property name="teaSchool"/>
+		<property name="teaIdCard"/>
+		<property name="teaIdCardImg"/>
+		<property name="teaCardImg"/>
+		<property name="teaPicture"/>
+		<property name="teaExperience"/>
+		<property name="teaSex"/>
+		<property name="teaDescription"/>
+		<property name="teaMajor"/>
+		<property name="teaEducation"/>
+	</class>
+</hibernate-mapping>

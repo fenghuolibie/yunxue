@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+.li{list-style:none;}
+
+.step{
+	width:1200px;
+	height:150px;
+	margin:0 auto;
+	padding-top:20px;}
+
+.fileinput{
+	float:left;
+	position: relative;
+	cursor:pointer; 
+	display: inline-block; 
+	overflow: hidden;
+	margin-left: 230px;}
+
+.fileinput span{
+    background: #f90;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;}
+	
+.fileinput input{
+	position: absolute;
+	cursor:pointer;  
+	left: 0px;
+	top:0px; 
+	opacity: 0; 
+	filter: 'alpha(opacity=0)';
+	height:40px;}
+
+.fileinput2{
+	float: right;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+	margin-right:800px;
+	margin-bottom:20px;}
+
+.fileinput2 span{
+    background: #f90;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;}
+	
+.fileinput2 input{
+	position: absolute;
+	cursor:pointer;  
+	left: 0px;
+	top:0px; 
+	opacity: 0; 
+	filter: 'alpha(opacity=0)';
+	height:40px;}
+
+.pic{
+	width:1200px;
+	height:250px;}
+
+.headtest{
+	width:150px;
+	height:150px;
+	margin-left: 150px;
+	margin-top: 20px;
+	float:left;}
+
+canvas {
+	border: solid thin #ccc;
+	float:left;}
+
+ #canvasContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;}
+
+ #picker {
+ position: absolute;
+ border: solid thin #ccc;
+ cursor: move;
+ overflow: hidden;
+ z-index: 2;}
+
+.container-button{
+	width:100px;
+	height:150px;
+	float:right;}
+
+.con-button{
+	cursor:pointer; 
+	margin-top:10px;
+	margin-left:10px;
+	background:#00c5ef;
+	color:white;
+	padding:5px 10px;
+	border:0;}
+
+.info{
+	width:100%;
+	height:50px;
+	line-height:38px;
+	margin-bottom:20px;}
+
+.key{
+	font-size: 16px;
+    width: 132px;
+    text-align: right;
+    float: left;}
+
+.value{
+	float: left;
+    width: 600px;}
+	
+.input1{
+	padding: 8px;
+    width: 273px;
+    border: #eee solid 1px;
+    font-size: 14px;}
+
+.value span{
+	font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+    display: inline-block;}
+
+.like-select{
+	width: 160px;
+    height: 36px;
+    border: #eee solid 1px;
+    float: left;
+    margin-left: 10px;}
+
+.select-value{
+	font-size: 13px;
+	cursor: pointer;
+    line-height: 36px;
+    padding-left: 10px;
+    width: 114px;
+    float: left;
+    color: #333;}
+
+.controls{
+	float: right;
+    width: 36px;
+    height: 36px;
+    display: block;
+    background: url(../IMG/tIdentity/down_icon.png)center center no-repeat;
+	cursor:pointer;}
+
+.option{
+	position: relative;
+    left: 0;
+    top: 0;
+    width: 147px;
+    padding: 0 6px;
+    background: #fff;
+    border: #ddd solid 1px;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    height: 155px;
+    overflow: hidden;}
+
+.option ul{
+	width: 100%;
+    height: 100%;
+    overflow:scroll;
+    overflow-y: auto;
+	overflow-x:hidden;}
+
+.option ul li{
+	width: 100%;
+	background:#fff;
+    font-size: 14px;
+    margin-right: 5px;
+    height: 39px;
+	font-size: 13px;
+    line-height: 38px;
+    overflow: hidden;
+    float: left;
+	cursor:pointer;
+	border-bottom:1px solid #ddd;}
+
+.option ul li:hover{
+	color:#1ec800;}
+
+.nextstep{
+	width:190px;
+	height:45px;
+	color:white;
+	border-radius:5px;
+	background:#f90;
+	line-height:45px;
+	text-align:center;
+	cursor:pointer;
+	font-weight:bold;
+    font-size: 16px;
+	margin-left:50px;
+	border:0;}
+
+.nextstep:hover{
+	background:#f27201;}
+
+.canvasContainer2{
+	position: relative;
+    width: 800px;
+    height: 400px;
+	margin-top:60px;
+	margin-left:100px;}
+
+table{
+	border-collapse:collapse;
+	border:none;}
+
+td{
+	border:1px solid #ddd;
+	text-align:center;
+	width:60px;
+	height:50px;}
+
+.checkpic{
+	width:45px;
+	height:45px;
+	margin-left:30px;
+    padding-top:5px;
+	cursor:pointer;
+	background:url(../IMG/tIdentity/radio1.png) no-repeat;}
+
+.checkpic2{
+	width:45px;
+	height:45px;
+	margin-left:30px;
+    padding-top:5px;
+	cursor:pointer;
+	background:url(../IMG/tIdentity/radio2.png) no-repeat;}
+
+input .time{
+	width:45px;
+	height:45px;
+	opacity: 0;
+    cursor: pointer;
+    display: none;
+    filter: 'alpha(opacity=0)';
+    }
+input{
+	display: none;
+}

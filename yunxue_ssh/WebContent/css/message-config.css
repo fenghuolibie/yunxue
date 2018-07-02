@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+/*commom*/
+*{margin: 0; padding: 0; outline: none;}
+a:link{text-decoration: none; color:#222121;}
+ul{list-style: none}
+.clear:after{content:""; display:table; height:0; visibility:both; clear:both;}
+.clearfix{zoom:1;}
+.in-line{width:100%; margin: 0 auto; height: 0.9px; background:#B3AFAF; margin-top: 14px;}
+.fileinput-button {position: relative; cursor:pointer; display: inline-block; overflow: hidden;}
+.fileinput-button input{position: absolute;cursor:pointer;  left: 0px; top:0px; opacity: 0; filter: 'alpha(opacity=0)'; height:15px;/*正对ie8老版本*/}
+	
+
+/*message-config*/
+.message-config{width:800px; background:#F0F0F0; padding: 10px; font-family: "微软雅黑";border: 1px solid #FFCECF; border-radius:15px;margin: 0 auto; display: none;}
+.message-config-head{width:100%; height: 30px;}
+.message-config-head span{line-height: 30px; padding-left: 30px; font-size: 20px; } 
+.message-config-head img{float:right;cursor:pointer;}
+
+.message-config-main{padding-top:25px;overflow:auto;}
+.message-config-main h4{padding-left: 20px;}
+.message-config-main ul li{padding: 5px 0px; float:left; width: 390px; height: 25px; line-height: 25px; border-bottom: 1px solid #E7E7E7;}
+.message-config-main ul li p{padding-left:40px; float:left;line-height: 25px; padding-right: 8px;}
+.message-config-main ul li lable{padding-right: 8px;}
+.message-config-main ul li .a{height: 19px; width:230px; font-size: 14px; border:#eee 1px solid; padding:1px; outline: 1px solid #F3B94D;transition: all 0.2s ease 0s;}
+.message-config-main input.c{border:0px;cursor:pointer; font-size: 18px; background: #EBC837; color:#F4F4F4; width:120px; height: 35px;border-radius: 13px;margin:25px 0px 0px 550px;}
+
+/*input*/
+.fileinput-button span{background: #D7373A;cursor:pointer; color: aliceblue; padding:2px 3px; border-radius: 5px; display:block; font-size:14px;}
+.config-img{height:150px; padding-left: 40px; padding-top: 20px;}
+.config-img p{float:left}
+.config-img span{float:left;}
+/*js*/
+.can{display: none; background:black; opacity: 0.6; width:100%; height: 800px;  position: fixed; top:0px; left:0px;}
+
+canvas {border: solid thin #ccc;cursor: pointer;float:left;}
+
+ #canvasContainer {
+    position: relative;
+    width: 230px;
+    height: 150px;
+    float: right;
+    margin-right: 200px;}
+
+ #picker {
+ position: absolute;
+ border: solid thin #ccc;
+ cursor: move;
+ overflow: hidden;
+ z-index: 2;}
+ 
+ .like-select{
+	width: 80px;
+    height: 25px;
+    border: #F3B94D solid 1px;
+    float: left;
+    margin-left: 10px;}
+
+.select-value{
+	font-size: 13px;
+	cursor: pointer;
+    line-height: 30px;
+    padding-left: 10px;
+    width: 45px;
+    float: left;
+    color: black;}
+
+.controls{
+	float: right;
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../IMG/tIdentity/down_icon.png)center center no-repeat;
+	cursor:pointer;}
+
+.option{
+	position: relative;
+    left: 0;
+    top: 0;
+    width: 65px;
+    padding: 0 6px;
+    background: #fff;
+    border: #F3B94D solid 1px;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    height: 125px;
+    overflow: hidden;}
+
+.option ul{
+	width: 70px;
+    height: 100%;
+    overflow:scroll;
+    overflow-y: auto;
+	overflow-x:hidden;}
+
+.option ul li{
+	width: 75px;
+	background:#fff;
+    font-size: 14px;
+    margin-right: 5px;
+    height: 30px;
+	font-size: 13px;
+    line-height: 30px;
+    overflow: hidden;
+    float: left;
+	cursor:pointer;
+	border-bottom:1px solid #ddd;}
+
+.option ul li:hover{
+	color:#1ec800;}

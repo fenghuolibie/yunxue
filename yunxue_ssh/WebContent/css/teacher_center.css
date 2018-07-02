@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding: 0; font-family: '微软雅黑';}
+a:link{text-decoration: none; color:#FFFFFF;}
+a:visited{color:#ffffff;}
+ul{list-style: none}
+.clear:after{content:""; display:table; height:0; visibility:both; clear:both;}
+.clearfix{zoom:1;}
+/*也能用于父标签对子元素浮动的影响 ul/li*/
+.in-line{width:100%; margin: 0 auto; height: 0.9px; background:#B3AFAF; margin-top: 14px;}
+
+/*main*/
+.wrap{width: 100%; min-width: 1300px; background-color:#f6f7fb; border-top: 1px solid #DCDCDC;}
+.main{width:1300px; height: 1000px; margin: 0 auto;}
+
+/*侧边导航栏*/
+.sidebar-box{width:180px; height:500px; background:#333; margin-top: 5px; padding-top: 5px; float:left;}
+/*用padding排除同边*/
+.empty{width:100%; height: 50px; background:#f6f7fb; margin-top: 7px;}
+.sidebar-box li{height: 57px; color:#fff; font-size: 17px; text-align: center; border-bottom:1px solid #333;}
+.sidebar-box a li{line-height: 57px;}
+.sidebar-box li:hover{background:#1E1E1E;}
+.border{ margin: 0 auto; width:100px; border-bottom:1px solid red; transition: 0.5s;}
+
+/*内容块*/
+.message-box{width:980px; height:1000px; margin-top: 5px; padding-top: 5px; float:right;}
+.message-box h3{border-left: 7px solid #BF800B; padding-left:30px; margin: 10px 0 20px 0px; width:500px;}
+.teacher-message-box{width:700px; background: #ffffff; height: 200px; padding: 10px 10px 10px; position:relative; margin-bottom: 35px;border-top:3px #C48000 solid;}
+.teacher-image{height:100px; float:left;}
+.teacher-image .mask{position:absolute; top:10px; left:10px;}
+.message-box-left{float:left; padding-left: 15px; }
+.message-box-left p.a{font-size: 28px; font-weight:500; padding-left:8px;}
+.message-box-left p.b{font-size: 17px; padding-left: 8px; color:gray; display:inline-block;}
+.message-box-left p.b span{color:black;}
+.message-box-left ul{padding: 10px 0px 10px 0px;}
+.message-box-left ul li{font-size: 15px; color:gray; float: left;padding:0px 8px;}
+.message-box-left ul li span{color:black;}
+.message-box-left ul li.a{border-right:0px;}
+
+/*课表*/
+.tea-class-tab{width:700px; background: #ffffff; height: 400px; padding: 10px 10px 10px; position:relative;margin-right: 23px; border-top:3px #E00C0F solid; }
+.class-img{height: 25px; padding: 15px 0 10px 37px; }
+.class-img dl{float:left; padding-left: 15px; font-size: 14px;}
+.class-img dl:first-child{padding-left: 0px;}
+.class-img dd,dt{float: left; padding-left: 5px;}
+.tea-class-tab table{border-spacing: 1px; background-color: #BBBBBB; border-radius: 8px; margin: 0 auto;}
+.tea-class-tab table th{background: #D7D7D7; padding: 5px 9px;text-align: center }
+.tea-class-tab table td{background: white; text-align: center; padding:0px 6px;}
+.tea-class-tab table td img{height: 30px; vertical-align:-2px}
+.tea-class-tab table td:first-child{width:50px; padding: 5px 2px; text-align: center}
+
+/*extra*/
+.info{
+	width:100%;
+	height:50px;
+	line-height:38px;
+	margin-bottom:20px;}
+
+.key{
+	font-size: 16px;
+    width: 132px;
+    text-align: right;
+    float: left;}
+.checkpic{
+	display:inline-block;
+	width:45px;
+	height:45px;
+	background:url(../IMG/tIdentity/radio1.png) no-repeat;
+	background-position:50% 70%;}
+
+.checkpic2{
+	display:inline-block;
+	width:45px;
+	height:45px;
+	background:url(../IMG/tIdentity/radio2.png) no-repeat;
+	background-position:50% 70%;
+    }
+
+
+.gochange{
+	display:block;
+	width: 55px;
+    height: 35px;
+    padding: 5px 10px;
+	background:#f90;
+	float: right;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

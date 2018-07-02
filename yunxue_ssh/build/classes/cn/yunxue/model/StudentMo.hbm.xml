@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入约束 -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="cn.yunxue.model.StudentMo" table="studentt">
+		<id name="stuNo" column="stuNo">
+			<generator class="native"/>
+		</id>
+		<property name="stuPhone"/>
+		<property name="stuPwd"/>
+		<property name="stuName"/>
+		<property name="stuMoney" />
+		<property name="stuState"/>
+		<property name="stuImg" />
+		<property name="stuBirth"/>
+		<property name="stuSex"/>
+		<property name="stuStage"/>
+		<property name="stuSchool"/>
+	</class>
+</hibernate-mapping>

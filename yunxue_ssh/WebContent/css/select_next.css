@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+	font-family: "微软雅黑";
+}
+
+.title {
+	margin:0 auto;
+    margin-top: 12px;
+	margin-bottom: 12px;
+    padding-left: 15px;
+    height: 36px;
+    line-height: 36px;
+    background: #f4f4f4;
+    border: 1px solid #eae9e9;
+    border-left: 0;
+    border-right: 0;
+    width:1300px;
+}
+
+.title h1{
+	font: 400 24px/36px 'Microsoft YaHei';
+    color: #323232;
+}
+
+.top_img{
+	width: 1300px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.tab-box {width:1260px; height:600px;margin:0 auto;  text-align: center; box-shadow: 0px 0px 5px #888888; padding-right: 20px;
+	padding-left: 20px;  }
+.tab-box table{border-spacing: 1px; background-color: #BBBBBB;  font-size: 20px;}
+.tab-box table th{background: #D7D7D7; padding: 5px 9px;text-align: center;}
+.tab-box table tr{height: 50px;}
+.tab-box table td{background: white; text-align: center; overflow: hidden;font-size: 18px;width:100px; font-weight: 500;}
+.tab-box table td img{height: 30px; vertical-align:-2px;}
+.tab-box table td:first-child{width:50px; padding: 5px 2px; text-align: center}
+.tab-box table td.ban{
+	cursor: not-allowed;
+/*	background: #fbfbfb;
+	background-image: url(../IMG/teacherMessage/ban.png);*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px;
+}
+.tab-box table td.can{
+	cursor: pointer;
+ 	background-image: url(../IMG/teacherMessage/can.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px;
+	
+}
+.tab-box table td.can span{
+	opacity: 0;
+	font-weight:800;
+
+}
+
+.tab-box table td.can:hover{
+	transition: .2s .15s !important;
+	opacity: 0.5 !important;
+}
+.tab-box table td.can:hover span{
+	transition: .2s .15s;
+	opacity: 1;
+}
+
+.tabs{
+	position: relative;
+    width: 1196px;
+    height: 50px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 0;
+
+}
+
+.tabs span{
+	transition: .2s .15s;
+	display: inline-block;
+	width: 238px;
+    height: 48px;
+	border: 1px #ccc solid;
+	line-height: 48px;
+	font-size: 20px;
+	cursor: pointer;
+	/*float: left;;*/
+}
+.tabs :not(:first-child){
+	border-left: 0;
+}
+.tabs span:hover,.tabs .active{
+	background-color: #fa7267;
+    border-color: #fa7267;
+}
+
+.subject{
+	width: 100%;
+	height: 30px;
+	margin: 10px auto;
+	padding:10px 0;
+	font-size: 0;
+}
+.subject span{
+	display: inline-block;
+	/*width: 70px;*/
+    height: 30px;
+    margin: 0 15px;
+	line-height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.subject span:hover,.subject .active{
+	border-bottom: 3px #fa7267 solid;
+	color: #fa7267;
+}
+
+.sub-appoint{
+	width: 200px;
+    height: 40px;
+    border: 0px;
+    background:#898BE9;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 19px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.page-mask{
+	width:100%;
+	background-color: rgba(0,0,0,0.7);;
+	height : 100% ;
+	position : fixed ;
+	z-index : 10000 ;
+	top : 0 ;
+	left : 0 ;
+	display: none;
+}
+.bounce{
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 200px;
+	background-color: #fff;
+	opacity: 1;
+	border-radius: 15px;
+}
+.close{
+	position: relative;
+    _position: absolute;
+    float: right;
+    top: 8px;
+    right: 13px;
+    _height: 26px;
+    padding: 0 4px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #FFF;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    cursor: pointer;
+    background: 0 0;
+    _background: #FFF;
+    border: 0;
+    -webkit-appearance: none;
+}
+.clear{
+	clear: both;
+}
+.classtitle{
+	background-color: #81d6dc;
+    border-radius: 4px;
+    width: 295;
+    height: 44px;
+    padding-left: 5px;
+    display: block;
+    color: #fff;
+    line-height: 44px;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.classprice{
+    display: block;	
+    background:#F7F7F7;
+}
+.classprice p{
+	
+	position: relative;
+    height: 32px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #848383;
+    display: block;
+    line-height: 32px;
+    font-size:18px;
+}
+.classprice p:hover{
+	background: #EEE9E9;
+}
+.select span{
+	opacity: 1 !important;
+}

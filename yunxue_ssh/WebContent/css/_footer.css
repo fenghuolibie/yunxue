@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+.footer{width:1300px; height: 225px; margin: 0 auto; font-size: 14px; text-align: center; font-family: "微软雅黑";}
+.footer .footer-box1{width:1240px; height: 45px; padding:70px 30px 0px;}
+.footer .footer-box1 a{padding: 0 30px; color:black;text-decoration-line: none}
+.footer .footer-box1 a:hover{color:red;}
+.footer .footer-box2{width:1240px; height: 49px; padding:10px  30px 0px; border-top:1px solid rgba(160,159,159,1.00);}
+.footer .footer-box3{width:1300px; height: 50px; }
+.footer .footer-box3 img{padding: 0 30px;}

@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+	font-family: "微软雅黑";
+}
+
+.top_img{
+	width: 1300px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.middle{
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 1300px;
+	height: auto;
+	
+}
+
+.title {
+    margin-top: 12px;
+	margin-bottom: 12px;
+    padding-left: 15px;
+    height: 36px;
+    line-height: 36px;
+    background: #f4f4f4;
+    border: 1px solid #eae9e9;
+    border-left: 0;
+    border-right: 0;
+}
+
+.lesson{
+	width: auto;
+	height: auto;
+	float: left;
+}
+
+.middle h1{
+	font: 400 24px/36px 'Microsoft YaHei';
+    color: #323232;
+}
+
+
+.class-tab{width: 600px; }
+/*
+.class-img{height: 25px; padding: 15px 0 10px 0px; }
+.class-img dl{float:left; padding-left: 15px; font-size: 14px;}
+.class-img dl:first-child{padding-left: 0px;}
+.class-img dd,dt{float: left; padding-left: 5px;}border-radius: 8px;box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+*/
+.tab-box {margin-top: 5px;  text-align: center;   }
+.tab-box table{border-spacing: 1px; background-color: #BBBBBB;  font-size: 20px;}
+.tab-box table th{background: #D7D7D7; padding: 5px 9px;text-align: center;}
+.tab-box table tr{height: 50px;}
+.tab-box table td{background: white; text-align: center;height:30px;}
+.checkpic{display:inline-block;width:30px;height:30px;background:url(../IMG/teacherMessage/can.png) no-repeat;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px;}
+
+.tab-box table td:first-child{width:50px; padding: 5px 2px; text-align: center}
+
+.tab-box table td.can{
+	cursor: pointer;
+ 	background-image: url(../IMG/teacherMessage/can.png); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px;
+	
+}
+.support{color: #848383; float: left; margin-top: 23px;}
+.support i{display: inline-block;width: 19px;background: url(../IMG/teacherMessage/icon-device.png);
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
+    position: relative;}
+.support .i1{
+    width: 18px;
+}
+.support .i2{
+	background-position: -24px 0;
+    width: 14px;
+}
+.support .i3{
+	background-position: -43px 0;
+    width: 18px;
+}
+.support .i4{
+	background-position: -66px 0;
+    width: 20px;
+}
+
+.appoint{
+	float: right;
+}
+
+.lesson-box {
+	
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    padding: 3px 0 0 0;
+}
+
+.lesson-box-img {
+    width: 80px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.lesson-box-img-mask {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 35px;
+    top: 3px;
+}
+
+.lesson-box-left {
+    width: 150px;
+    padding-top: 3px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+
+.mask1 {
+    display: block;
+}
+
+.lesson-box-center{
+	float: left;
+}
+
+.lesson-p{
+	width: 500px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    background: url(../IMG/teacherMessage/bg-price.jpg) no-repeat;
+}
+
+.lesson-p-after{
+	position: relative;
+    background: #f2f5f7;
+    padding: 10px 10px;
+    line-height: 16px;
+    height: 30px;
+    border: 1px solid #f2f5f7;
+    border-top: none;
+    border-bottom: none;
+	
+}
+
+.lesson-box-center .renzheng{
+	float: right;
+}
+
+.lesson-box-center .renzheng li.certification {
+    background-position: left -50px;
+}
+
+.lesson-box-center .renzheng li.realname {
+    background-position: left 0px;
+}
+.lesson-box-center .renzheng li {
+    margin: 0;
+    float: left;
+    padding-left: 37px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    background: url(../IMG/teacherMessage/teacher_medal.png) no-repeat;
+    text-align: left;
+}
+
+.lesson-box-center .renzheng li {
+    margin: 0;
+    float: left;
+    padding-left: 37px;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #999;
+    background: url(../IMG/teacherMessage/teacher_medal.png) no-repeat;
+    text-align: left;
+}
+
+.lesson-box-right{
+	
+	margin: 15px;
+}
+
+.lesson-box-information{
+	width: 540px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.lesson-box-information p {
+	float: left;
+    min-width: 160px;
+    font-size: 14px;
+    line-height: 26px;
+    min-height: 26px;
+    color: #666;
+}
+
+.clear{
+	clear: both;
+}
+
+ul li {
+    list-style: none;
+}
+
+.course-list{
+	margin-top: 5px;
+}
+
+.special{
+	max-width: 540px;
+	margin-top: 5px;
+	margin-left: 20px;
+	color: #848383;
+    font-size: 12px;
+}
+.special span{
+	float: left;
+	display: block;
+	width: 150px;
+	margin: 5px 0;
+}
+.special i{
+	display: inline-block;
+    vertical-align: text-top;
+    margin-top: 2px;
+    width: 13px;
+    height: 13px;
+    margin-right: 4px;
+}
+.s1 i{
+	background: url(../IMG/teacherMessage/icon-card-info.png) -364px 0 no-repeat;
+}
+.s2 i{
+	background: url(../IMG/teacherMessage/icon-card-info.png) -182px 0 no-repeat;
+}
+.s3 i{
+	background: url(../IMG/teacherMessage/icon-card-info.png) -350px 0 no-repeat;
+}
+.s4 i{
+	background: url(../IMG/teacherMessage/icon-card-info.png) -434px 0 no-repeat;
+}
+.s5 i{
+	background: url(../IMG/teacherMessage/icon-card-info.png) -350px 0 no-repeat;
+}
+.appoint-sb{
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.appoint-sb-but{
+	width: 200px;
+    height: 40px;
+    border: 0px;
+	background: #fa7267;
+    color: white;
+    font-family: "微软雅黑";
+    font-size: 19px;
+    margin-top: 15px;
+    cursor: pointer;
+	float: right;
+}
+
+
+
+
+
+

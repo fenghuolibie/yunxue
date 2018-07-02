@@ -1,0 +1,113 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<package name="index" namespace="/kl" extends="json-default">
+	     <!-- <global-exception-mappings>
+             <exception-mapping result="allError" exception="java.lang.Exception">
+             </exception-mapping>
+         </global-exception-mappings> -->
+	    <!--   学生登录  -->
+	     <action name="stuLogin" class="cn.yunxue.action.StuLoginAction">
+	          <result name="success" type="redirect">/font/index.jsp</result>
+	          <result name="error" type="redirect">/font/stuLogin.jsp?logMsg=${logMsg}</result>
+	          <result name="allError" type="redirect">/font/fobid.jsp</result>
+	     </action>
+	    <!--  学生注册  -->
+	     <action name="stuRegister" class="cn.yunxue.action.StuRegisterAction">
+	          <result name="success" type="redirect">/font/stuLogin.jsp?regMsg={regMsg}</result>
+	          <result name="error" type="redirect">/font/userRegister.jsp?regMsg={regMsg}</result>
+	     </action>
+	   <!--   教师注册  -->
+	     <action name="teaRegister" class="cn.yunxue.action.TeaRegisterAction">
+	          <result name="success" type="redirect">/font/teaLogin.jsp?regMsg=${regMsg}</result>
+	          <result name="error" type="redirect">/font/userRegister.jsp?regMsg=${regMsg}</result>
+	     </action>
+	   <!--   教师登录  -->
+	     <action name="teaLogin" class="cn.yunxue.action.TeaLoginAction">
+	          <result name="success" type="redirect">/font/index.jsp</result>
+	          <result name="error" type="redirect">/font/teaLogin.jsp?logMsg=${logMsg}</result>
+	     </action>
+	    <!--  教师查询  -->
+	     <action name="teaQuerry" class="cn.yunxue.action.QueryTeacherAction">
+	          <result name="success">/font/teacher_query.jsp</result>
+	          <result name="error" type="redirect">/font/stuLogin.jsp</result>
+	     </action>
+	     <action name="teaMessage" class="cn.yunxue.action.TeaMessageAction">
+	          <result name="success">/font/teacherMessage.jsp</result>
+	     </action>
+	     <!-- 教师检查认证 -->
+	     <action name="teaIdentity" class="cn.yunxue.action.TeaIdentityAction">
+	          <result name="success">/font/teacherCenter.jsp</result>
+	          <result name="error">/font/teaIdentity.jsp</result>
+	          <result name="error1" type="redirect">/font/teaIdentity.jsp?passMg=${passMg}</result>
+	          <result name="error2">/font/teaIdentityStep3.jsp</result>
+	     </action>
+	     <!-- 教师认证第一步 -->
+	     <action name="teaIdentityFirst" class="cn.yunxue.action.TeaIdentityFirstAction">
+	          <result name="success" type="json"></result>
+	          <!-- <result name="success" type="redirect">/font/teaIdentity.jsp?markMsg=${markMsg}</result> -->
+	          <result name="allerror">/font/fobid.jsp</result>
+	     </action>
+	    <!--  教师认证第二步 -->
+	     <action name="teaIdentitySecond" class="cn.yunxue.action.TeaIdentitySecondAction">
+	          <result name="success">/font/teaIdentityStep3.jsp</result>
+	          <result name="allError">/font/fobid.jsp</result>
+	     </action>
+	     <!-- 教师认证第三步 -->
+	     <action name="teaIdentityThrid" class="cn.yunxue.action.TeaIdentityThridAction">
+	          <result name="success" type="redirect">/font/index.jsp?identityMsg=${identityMsg}</result>
+	          <result name="allerror">/font/fobid.jsp</result>
+	     </action>
+	     <!-- 用于判断是否可以进入购买页面 -->
+         <action name="buyClassFirst" class="cn.yunxue.action.BuyClassFirstAction">
+             <result name="success">/font/buyclass.jsp</result>
+             <result name="error">/font/index.jsp</result>
+         </action>
+         <!-- 购买业务处理，订单生成 -->
+         <action name="buyClassOrder" class="cn.yunxue.action.BuyClassOrderAction">
+             <result>/font/buyclass.jsp</result>
+         </action>
+         <!-- 购买成功 -->
+        <action name="buyClassSuccess" class="cn.yunxue.action.BuyClassSuccessAction">
+            <result type="json"></result>
+        </action>
+        <!-- 学生进入个人中心-->
+        <action name="stuMsg" class="cn.yunxue.action.StuCenterAction">
+            <result name="success">/font/person_center.jsp</result>
+        </action>
+        <!-- 学生信息更新 -->
+        <action name="stuUpdateMsg" class="cn.yunxue.action.StuMessageAction">
+            <result name="success" type="redirectAction">stuMsg</result>
+        </action>
+        <!-- 学生头像上传更新 -->
+        <action name="stuImg" class="cn.yunxue.action.StuImgAction">
+            <result name="success" type="json"></result>
+        </action>
+        <!-- 学生预约可课程 -->
+        <action name="classAppopint" class="cn.yunxue.action.ClassAppointAction">
+            <result name="success">/font/classAppoint.jsp</result>
+        </action>
+        <!-- 用户退出 -->
+         <action name="exit" class="cn.yunxue.action.UserExitAction">
+             <result name="success">/font/index.jsp</result>
+         </action>
+         <action name="classSave" class="cn.yunxue.action.ClassSaveAction">
+             <result name="success" type="json"></result>
+         </action>
+         <!-- 验证码 -->
+	     <action name="c" class="cn.yunxue.action.CheckImgAction"></action>
+	</package>
+	<package name="Json" namespace="/kljson" extends="json-default">
+	     <!-- 学生号码验证 -->
+	     <action name="stuPhoneExist" class="cn.yunxue.action.StuCheckPhoneAction">
+	          <result name="success" type="json"></result>
+	          <result name="exception"></result>
+	     </action>
+	     <!-- 教师号码验证 -->
+	     <action name="teaPhoneExist" class="cn.yunxue.action.TeaCheckPhoneAction">
+	          <result name="success" type="json"></result>
+ 	     </action>
+	</package>
+</struts>
